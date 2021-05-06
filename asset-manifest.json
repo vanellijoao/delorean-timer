@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/delorean/static/css/main.cb1e0c9c.chunk.css",
-    "main.js": "/delorean/static/js/main.662c939a.chunk.js",
-    "main.js.map": "/delorean/static/js/main.662c939a.chunk.js.map",
-    "runtime-main.js": "/delorean/static/js/runtime-main.0d0d2251.js",
-    "runtime-main.js.map": "/delorean/static/js/runtime-main.0d0d2251.js.map",
-    "static/js/2.4100bf71.chunk.js": "/delorean/static/js/2.4100bf71.chunk.js",
-    "static/js/2.4100bf71.chunk.js.map": "/delorean/static/js/2.4100bf71.chunk.js.map",
-    "static/js/3.bcb4a169.chunk.js": "/delorean/static/js/3.bcb4a169.chunk.js",
-    "static/js/3.bcb4a169.chunk.js.map": "/delorean/static/js/3.bcb4a169.chunk.js.map",
-    "index.html": "/delorean/index.html",
-    "static/css/main.cb1e0c9c.chunk.css.map": "/delorean/static/css/main.cb1e0c9c.chunk.css.map",
-    "static/js/2.4100bf71.chunk.js.LICENSE.txt": "/delorean/static/js/2.4100bf71.chunk.js.LICENSE.txt"
+    "main.css": "/delorean-chronometer/static/css/main.cb1e0c9c.chunk.css",
+    "main.js": "/delorean-chronometer/static/js/main.662c939a.chunk.js",
+    "main.js.map": "/delorean-chronometer/static/js/main.662c939a.chunk.js.map",
+    "runtime-main.js": "/delorean-chronometer/static/js/runtime-main.e9a8a35b.js",
+    "runtime-main.js.map": "/delorean-chronometer/static/js/runtime-main.e9a8a35b.js.map",
+    "static/js/2.4100bf71.chunk.js": "/delorean-chronometer/static/js/2.4100bf71.chunk.js",
+    "static/js/2.4100bf71.chunk.js.map": "/delorean-chronometer/static/js/2.4100bf71.chunk.js.map",
+    "static/js/3.bcb4a169.chunk.js": "/delorean-chronometer/static/js/3.bcb4a169.chunk.js",
+    "static/js/3.bcb4a169.chunk.js.map": "/delorean-chronometer/static/js/3.bcb4a169.chunk.js.map",
+    "index.html": "/delorean-chronometer/index.html",
+    "static/css/main.cb1e0c9c.chunk.css.map": "/delorean-chronometer/static/css/main.cb1e0c9c.chunk.css.map",
+    "static/js/2.4100bf71.chunk.js.LICENSE.txt": "/delorean-chronometer/static/js/2.4100bf71.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d0d2251.js",
+    "static/js/runtime-main.e9a8a35b.js",
     "static/js/2.4100bf71.chunk.js",
     "static/css/main.cb1e0c9c.chunk.css",
     "static/js/main.662c939a.chunk.js"
