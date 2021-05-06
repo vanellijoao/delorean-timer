@@ -1,13 +1,13 @@
 import React from 'react';
-import TimeFrame from './TimeFrame';
+import PresentTime from './PresentTime';
 
 class TimeTravelBox extends React.Component {
   render() {
     return (
       <div className="box">
-        <TimeFrame legend="Present Time"/>
-        <TimeFrame legend="Destination Time"/>
-        <TimeFrame legend="Waiting Time"/>
+        <PresentTime legend="Present Time"/>
+        {/* <TimeFrame legend="Destination Time"/>
+        <TimeFrame legend="Waiting Time"/> */}
       </div>
     )
   }

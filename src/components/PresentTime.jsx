@@ -19,14 +19,14 @@ const SECOND = format(new Date(), 'ss', {
 });
 
 const state = {
-  day: format(new Date(), 'ss', {locale: ptBR,}),
-  month: format(new Date(), 'ss', {locale: ptBR,}),
-  hour: format(new Date(), 'ss', {locale: ptBR,}),
-  minute: format(new Date(), 'ss', {locale: ptBR,}),
+  day: format(new Date(), 'dd', {locale: ptBR,}),
+  month: format(new Date(), 'MMM', {locale: ptBR,}),
+  hour: format(new Date(), 'HH', {locale: ptBR,}),
+  minute: format(new Date(), 'mm', {locale: ptBR,}),
   second: format(new Date(), 'ss', {locale: ptBR,})
 }
 
-class TimeFrame extends React.Component {
+class PresentTime extends React.Component {
   constructor(props) {
     super(props);
 
@@ -38,6 +38,10 @@ class TimeFrame extends React.Component {
     this.cronometerInterval = setInterval(() => {
       console.log('interval rodando');(
       this).setState({
+        day: format(new Date(), 'dd', {locale: ptBR,}),
+        month: format(new Date(), 'MMM', {locale: ptBR,}),
+        hour: format(new Date(), 'HH', {locale: ptBR,}),
+        minute: format(new Date(), 'mm', {locale: ptBR,}),
         second: format(new Date(), 'ss', {locale: ptBR,})
       });
     }, ONE_SECOND);
@@ -69,7 +73,6 @@ class TimeFrame extends React.Component {
             <p>sec</p>
             <div>{ second }</div>
           </div>
-          <button>oi</button>
         </div>
         <div className="legend">
           <p>{ this.props.legend }</p>
@@ -79,4 +82,4 @@ class TimeFrame extends React.Component {
   }
 }
 
-export default TimeFrame;
+export default PresentTime;
