@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/delorean-chronometer/static/css/main.cb1e0c9c.chunk.css",
-    "main.js": "/delorean-chronometer/static/js/main.662c939a.chunk.js",
-    "main.js.map": "/delorean-chronometer/static/js/main.662c939a.chunk.js.map",
-    "runtime-main.js": "/delorean-chronometer/static/js/runtime-main.e9a8a35b.js",
-    "runtime-main.js.map": "/delorean-chronometer/static/js/runtime-main.e9a8a35b.js.map",
-    "static/js/2.4100bf71.chunk.js": "/delorean-chronometer/static/js/2.4100bf71.chunk.js",
-    "static/js/2.4100bf71.chunk.js.map": "/delorean-chronometer/static/js/2.4100bf71.chunk.js.map",
-    "static/js/3.bcb4a169.chunk.js": "/delorean-chronometer/static/js/3.bcb4a169.chunk.js",
-    "static/js/3.bcb4a169.chunk.js.map": "/delorean-chronometer/static/js/3.bcb4a169.chunk.js.map",
+    "main.css": "/delorean-chronometer/static/css/main.281da231.chunk.css",
+    "main.js": "/delorean-chronometer/static/js/main.078c7746.chunk.js",
+    "main.js.map": "/delorean-chronometer/static/js/main.078c7746.chunk.js.map",
+    "runtime-main.js": "/delorean-chronometer/static/js/runtime-main.dc72187c.js",
+    "runtime-main.js.map": "/delorean-chronometer/static/js/runtime-main.dc72187c.js.map",
+    "static/js/2.835565c8.chunk.js": "/delorean-chronometer/static/js/2.835565c8.chunk.js",
+    "static/js/2.835565c8.chunk.js.map": "/delorean-chronometer/static/js/2.835565c8.chunk.js.map",
+    "static/js/3.a8b50542.chunk.js": "/delorean-chronometer/static/js/3.a8b50542.chunk.js",
+    "static/js/3.a8b50542.chunk.js.map": "/delorean-chronometer/static/js/3.a8b50542.chunk.js.map",
     "index.html": "/delorean-chronometer/index.html",
-    "static/css/main.cb1e0c9c.chunk.css.map": "/delorean-chronometer/static/css/main.cb1e0c9c.chunk.css.map",
-    "static/js/2.4100bf71.chunk.js.LICENSE.txt": "/delorean-chronometer/static/js/2.4100bf71.chunk.js.LICENSE.txt"
+    "static/css/main.281da231.chunk.css.map": "/delorean-chronometer/static/css/main.281da231.chunk.css.map",
+    "static/js/2.835565c8.chunk.js.LICENSE.txt": "/delorean-chronometer/static/js/2.835565c8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/delorean-chronometer/static/media/metal-background.c4120f06.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e9a8a35b.js",
-    "static/js/2.4100bf71.chunk.js",
-    "static/css/main.cb1e0c9c.chunk.css",
-    "static/js/main.662c939a.chunk.js"
+    "static/js/runtime-main.dc72187c.js",
+    "static/js/2.835565c8.chunk.js",
+    "static/css/main.281da231.chunk.css",
+    "static/js/main.078c7746.chunk.js"
   ]
 }
