@@ -82,8 +82,6 @@ Each Timeframe
   justify-content: space-between;
   align-items: center;
 
-  /* background-color: blueviolet; */
-
   height: 100px;
 }
 
@@ -137,4 +135,28 @@ Each Legend
   font-size: 32px;
   color: white;
   background-color: black;
+}
+
+/* ------------------------------------------------------------------------
+Button
+------------------------------------------------------------------------ */
+
+.start {
+  background: 
+    linear-gradient(149deg, rgb(255, 0, 0), rgba(255,0,0,0) 110%),
+    linear-gradient(26deg, rgb(172, 11, 11), rgba(255,0,0,0) 80%),
+    linear-gradient(260deg, rgb(117, 7, 7), rgba(255,0,0,0) 110%);
+
+  height: 120px;
+  width: 120px;
+
+  border: 1px solid rgb(163, 9, 9);
+  border-radius: 60px;
+
+  box-shadow: 10px 5px 10px black;
+
+  font-family: Digital;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
 }

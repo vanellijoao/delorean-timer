@@ -5,7 +5,7 @@ class Button extends React.Component {
     // const { id, value } = this.props;
 
     return (
-      <button className="start">1.21 GIGAWATTS!!</button>
+      <button className="start">1.21 GIGAWATTS</button>
     )
   }
 }

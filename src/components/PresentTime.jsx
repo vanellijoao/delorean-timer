@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from './Button';
 import TimeComponent from './TimeComponent';
 
 class PresentTime extends React.Component {
   render() {
-    const { day, month, hour, min, sec } = this.props
+    const { day, month, hour, min, sec, id } = this.props
     
     return (
       <div className="timeframe">
@@ -12,7 +13,7 @@ class PresentTime extends React.Component {
           <TimeComponent id='month' value={ month }/>
           <TimeComponent id='hour' value={ hour }/>
           <TimeComponent id='min' value={ min }/>
-          <TimeComponent id='sec' value={ sec }/>
+          { id === "destination-time" ? <Button/> : <TimeComponent id='sec' value={ sec }/>}
         </div>
         <div className="legend">
           <p>{ this.props.legend }</p>
