@@ -58,7 +58,52 @@ Each Timeframe
 .date {
   /* background-color: rgb(223, 221, 212); */
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
   height: 100px;
+}
+
+.month {
+  width: 140px;
+}
+
+.day, .hour, .min, .sec {
+  width: 100px;
+}
+
+.am-pm {
+  width: 60px;
+}
+
+.date div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: blueviolet; */
+
+  height: 100px;
+}
+
+.date div p {
+  margin: 0;
+
+  font-family: Dymo;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(241, 2, 2);
+}
+
+.date div div {
+  background-color: black;
+  
+  border-radius: 4px;
+  
+  height: 60px;
+  width: 80px;
 }
 
 .legend {
@@ -72,7 +117,7 @@ Each Timeframe
 
 .legend p {
   margin: 0;
-
+  width: auto;
 
   font-family: Dymo;
   font-size: 32px;
