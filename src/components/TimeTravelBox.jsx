@@ -22,7 +22,7 @@ class TimeTravelBox extends React.Component {
 
   componentDidMount() {
     const ONE_MILISECOND = 1;
-    this.cronometerInterval = setInterval(() => {(
+    setInterval(() => {(
       this).setState({
         day: format(new Date(), 'dd', {locale: ptBR,}),
         month: format(new Date(), 'MMM', {locale: ptBR,}),
@@ -57,8 +57,8 @@ class TimeTravelBox extends React.Component {
           sec={ sec }
         />
         <PresentTime 
-          legend="Waiting Time"
-          id="waiting-time"
+          legend="Countdown"
+          id="countdown"
           day={ day }
           month={ month }
           hour={ hour }
