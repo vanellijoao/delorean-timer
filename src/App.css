@@ -1,4 +1,81 @@
+@font-face {
+  font-family: 'Dymo';
+  src: url(./fonts/ImpactLabelReversed.ttf);
+}
 
-.App {
+/* ------------------------------------------------------------------------
+Background
+------------------------------------------------------------------------ */
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  width: 100vw;
+
+  background: 
+    linear-gradient(217deg, rgb(17, 16, 16), rgba(255,0,0,0) 110%),
+    linear-gradient(127deg, rgb(15, 15, 15), rgba(0,255,0,0) 190%),
+    linear-gradient(336deg, rgb(15, 15, 15), rgba(0,0,255,0) 290%);
+}
+
+/* ------------------------------------------------------------------------
+Main Box
+------------------------------------------------------------------------ */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 500px;
+  width: 1000px;
+
+  border-radius: 2px;
+  border: 2px solid rgb(143, 143, 143);
+
+  background: url(./img/metal-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------------------------------------------------------------------
+Each Timeframe
+------------------------------------------------------------------------ */
+
+.timeframe {
+  height: 150px;
+  width: 99%;
+  
+  /* border: 2px solid black; */
+  
+  background: transparent;
+}
+
+.date {
+  /* background-color: rgb(223, 221, 212); */
+
+  height: 100px;
+}
+
+.legend {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+}
+
+.legend p {
+  margin: 0;
+
+
+  font-family: Dymo;
+  font-size: 32px;
+  color: white;
   background-color: black;
 }
