@@ -4,19 +4,19 @@ import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 
 import Timeframe from './Timeframe';
+import { set } from 'date-fns';
 
 const state = {
-  date: new Date(),
   day: format(new Date(), 'dd', {locale: ptBR,}),
   month: format(new Date(), 'MMM', {locale: ptBR,}),
   hour: format(new Date(), 'HH', {locale: ptBR,}),
   min: format(new Date(), 'mm', {locale: ptBR,}),
   sec: format(new Date(), 'ss', {locale: ptBR,}),
-  destHour: 18,
-  destMin: 5,
-  countdownHour: 0,
-  countdownMin: 0,
-  countdownSec: 0,
+  destHour: "00",
+  destMin: "00",
+  countdownHour: "00",
+  countdownMin: "00",
+  countdownSec: "00",
 }
 
 class TimeTravelBox extends React.Component {
@@ -24,6 +24,8 @@ class TimeTravelBox extends React.Component {
     super();
 
     this.time = this.time.bind(this);
+    this.countdown = this.countdown.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.updateTime = this.updateTime.bind(this);
 
     this.state = state
@@ -31,7 +33,6 @@ class TimeTravelBox extends React.Component {
 
   time() {
     this.setState({
-      date: new Date(),
       day: format(new Date(), 'dd', {locale: ptBR,}),
       month: format(new Date(), 'MMM', {locale: ptBR,}),
       hour: format(new Date(), 'HH', {locale: ptBR,}),
@@ -75,6 +76,14 @@ class TimeTravelBox extends React.Component {
     })
   }
 
+  handleChange(event) {
+    const { target: { name, value } } = event
+
+    this.setState({
+      [name]: value,
+    })
+  }
+
   updateTime() {
     const ONE_MILISECOND = 1;
     setInterval(() => {
@@ -88,7 +97,11 @@ class TimeTravelBox extends React.Component {
   }
   
   render() {
-    const { day, month, hour, min, sec, countdownHour, countdownMin, countdownSec } = this.state
+    const {
+      day, month, hour, min, sec,
+      destHour, destMin,
+      countdownHour, countdownMin, countdownSec
+    } = this.state
 
     return (
       <div className="box">
@@ -108,7 +121,9 @@ class TimeTravelBox extends React.Component {
           month={ month }
           hour={ hour }
           min={ min }
-          sec={ sec }
+          destHour={ destHour }
+          destMin={ destMin }
+          handleChange={ this.handleChange }
         />
         <Timeframe
           legend="Countdown"
