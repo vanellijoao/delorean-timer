@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/delorean-timer/static/css/main.06a8ab32.chunk.css",
-    "main.js": "/delorean-timer/static/js/main.ce9df066.chunk.js",
-    "main.js.map": "/delorean-timer/static/js/main.ce9df066.chunk.js.map",
-    "runtime-main.js": "/delorean-timer/static/js/runtime-main.b0c8ce9e.js",
-    "runtime-main.js.map": "/delorean-timer/static/js/runtime-main.b0c8ce9e.js.map",
-    "static/js/2.c4785e06.chunk.js": "/delorean-timer/static/js/2.c4785e06.chunk.js",
-    "static/js/2.c4785e06.chunk.js.map": "/delorean-timer/static/js/2.c4785e06.chunk.js.map",
-    "static/js/3.8584aff7.chunk.js": "/delorean-timer/static/js/3.8584aff7.chunk.js",
-    "static/js/3.8584aff7.chunk.js.map": "/delorean-timer/static/js/3.8584aff7.chunk.js.map",
+    "main.css": "/delorean-timer/static/css/main.1ab0b227.chunk.css",
+    "main.js": "/delorean-timer/static/js/main.f60ba676.chunk.js",
+    "main.js.map": "/delorean-timer/static/js/main.f60ba676.chunk.js.map",
+    "runtime-main.js": "/delorean-timer/static/js/runtime-main.d92941f2.js",
+    "runtime-main.js.map": "/delorean-timer/static/js/runtime-main.d92941f2.js.map",
+    "static/js/2.0ce9df6f.chunk.js": "/delorean-timer/static/js/2.0ce9df6f.chunk.js",
+    "static/js/2.0ce9df6f.chunk.js.map": "/delorean-timer/static/js/2.0ce9df6f.chunk.js.map",
+    "static/js/3.24920af4.chunk.js": "/delorean-timer/static/js/3.24920af4.chunk.js",
+    "static/js/3.24920af4.chunk.js.map": "/delorean-timer/static/js/3.24920af4.chunk.js.map",
     "index.html": "/delorean-timer/index.html",
-    "static/css/main.06a8ab32.chunk.css.map": "/delorean-timer/static/css/main.06a8ab32.chunk.css.map",
-    "static/js/2.c4785e06.chunk.js.LICENSE.txt": "/delorean-timer/static/js/2.c4785e06.chunk.js.LICENSE.txt",
+    "static/css/main.1ab0b227.chunk.css.map": "/delorean-timer/static/css/main.1ab0b227.chunk.css.map",
+    "static/js/2.0ce9df6f.chunk.js.LICENSE.txt": "/delorean-timer/static/js/2.0ce9df6f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/delorean-timer/static/media/metal-background.c4120f06.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b0c8ce9e.js",
-    "static/js/2.c4785e06.chunk.js",
-    "static/css/main.06a8ab32.chunk.css",
-    "static/js/main.ce9df066.chunk.js"
+    "static/js/runtime-main.d92941f2.js",
+    "static/js/2.0ce9df6f.chunk.js",
+    "static/css/main.1ab0b227.chunk.css",
+    "static/js/main.f60ba676.chunk.js"
   ]
 }
