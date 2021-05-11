@@ -3,7 +3,7 @@ import Button from './Button';
 import InputComponent from './InputComponent';
 import TimeComponent from './TimeComponent';
 
-class PresentTime extends React.Component {
+class Timeframe extends React.Component {
   render() {
     const { day, month, hour, min, sec, id } = this.props
     
@@ -24,4 +24,4 @@ class PresentTime extends React.Component {
   }
 }
 
-export default PresentTime;
+export default Timeframe;
