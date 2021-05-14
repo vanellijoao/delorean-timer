@@ -7,16 +7,22 @@ import Timeframe from './Timeframe';
 import { set } from 'date-fns';
 
 const state = {
-  day: format(new Date(), 'dd', {locale: ptBR,}),
-  month: format(new Date(), 'MMM', {locale: ptBR,}),
-  hour: format(new Date(), 'HH', {locale: ptBR,}),
-  min: format(new Date(), 'mm', {locale: ptBR,}),
-  sec: format(new Date(), 'ss', {locale: ptBR,}),
-  destHour: "00",
-  destMin: "00",
-  countdownHour: "00",
-  countdownMin: "00",
-  countdownSec: "00",
+  actualDate: {
+    day: format(new Date(), 'dd', {locale: ptBR,}),
+    month: format(new Date(), 'MMM', {locale: ptBR,}),
+    hour: format(new Date(), 'HH', {locale: ptBR,}),
+    min: format(new Date(), 'mm', {locale: ptBR,}),
+    sec: format(new Date(), 'ss', {locale: ptBR,}),
+  },
+  destination: {
+    destHour: "00",
+    destMin: "00",
+  },
+  countdown: {
+    countdownHour: "00",
+    countdownMin: "00",
+    countdownSec: "00",
+  }
 }
 
 class TimeTravelBox extends React.Component {
@@ -33,11 +39,13 @@ class TimeTravelBox extends React.Component {
 
   time() {
     this.setState({
-      day: format(new Date(), 'dd', {locale: ptBR,}),
-      month: format(new Date(), 'MMM', {locale: ptBR,}),
-      hour: format(new Date(), 'HH', {locale: ptBR,}),
-      min: format(new Date(), 'mm', {locale: ptBR,}),
-      sec: format(new Date(), 'ss', {locale: ptBR,})
+      actualDate: {
+        day: format(new Date(), 'dd', {locale: ptBR,}),
+        month: format(new Date(), 'MMM', {locale: ptBR,}),
+        hour: format(new Date(), 'HH', {locale: ptBR,}),
+        min: format(new Date(), 'mm', {locale: ptBR,}),
+        sec: format(new Date(), 'ss', {locale: ptBR,})
+      }
     })
   }
 
@@ -70,9 +78,11 @@ class TimeTravelBox extends React.Component {
     }
     
     this.setState({
-      countdownSec,
-      countdownMin,
-      countdownHour
+      countdown: {
+        countdownSec,
+        countdownMin,
+        countdownHour
+      }
     })
   }
 
@@ -82,13 +92,13 @@ class TimeTravelBox extends React.Component {
     this.setState({
       [name]: value,
     })
+
   }
 
   updateTime() {
     const ONE_MILISECOND = 1;
     setInterval(() => {
       this.time()
-      this.countdown()
     }, ONE_MILISECOND);
   }
 
@@ -98,9 +108,15 @@ class TimeTravelBox extends React.Component {
   
   render() {
     const {
-      day, month, hour, min, sec,
-      destHour, destMin,
-      countdownHour, countdownMin, countdownSec
+      actualDate: {
+        day, month, hour, min, sec,
+      },
+      destination: {
+        destHour, destMin,
+      },
+      countdown: {
+        countdownHour, countdownMin, countdownSec
+      }
     } = this.state
 
     return (
